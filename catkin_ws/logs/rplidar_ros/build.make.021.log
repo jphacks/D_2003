@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target rplidarNodeYOLO[0m
+[ 18%] Built target rplidarNodeClient
+[ 81%] Built target rplidarNode
+[ 90%] [32mBuilding CXX object CMakeFiles/rplidarNodeYOLO.dir/src/YOLO.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/jphacks2020/catkin_ws/devel/.private/rplidar_ros/lib/rplidar_ros/rplidarNodeYOLO[0m
+[100%] Built target rplidarNodeYOLO

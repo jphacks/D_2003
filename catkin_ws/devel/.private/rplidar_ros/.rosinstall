@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/jphacks2020/catkin_ws/devel/.private/rplidar_ros/setup.sh

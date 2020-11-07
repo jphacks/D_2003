@@ -1,0 +1,14 @@
+[35m[1mScanning dependencies of target rplidarNodeYOLO[0m
+[  9%] [32mBuilding CXX object CMakeFiles/rplidarNodeYOLO.dir/src/YOLO.cpp.o[0m
+[ 54%] Built target rplidarNodeClient
+[ 90%] Built target rplidarNode
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:[m[K In function ‘[01m[Kvoid scanCallback(const ConstPtr&)[m[K’:
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:56:18:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ofstream path[m[K’ has initializer but incomplete type
+     ofstream path("LiDAR.csv");
+[01;32m[K                  ^[m[K
+CMakeFiles/rplidarNodeYOLO.dir/build.make:62: recipe for target 'CMakeFiles/rplidarNodeYOLO.dir/src/YOLO.cpp.o' failed
+make[2]: *** [CMakeFiles/rplidarNodeYOLO.dir/src/YOLO.cpp.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/rplidarNodeYOLO.dir/all' failed
+make[1]: *** [CMakeFiles/rplidarNodeYOLO.dir/all] Error 2
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2

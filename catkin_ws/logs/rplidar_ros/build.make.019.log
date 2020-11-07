@@ -1,0 +1,45 @@
+[35m[1mScanning dependencies of target rplidarNodeYOLO[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/rplidarNodeYOLO.dir/src/YOLO.cpp.o[0m
+[ 27%] Built target rplidarNodeClient
+[ 90%] Built target rplidarNode
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:38[m[K:
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:[m[K In function ‘[01m[Kvoid scanCallback(const ConstPtr&)[m[K’:
+[01m[K/opt/ros/kinetic/include/ros/console.h:346:176:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 8 has type ‘[01m[Kint[m[K’ [-Wformat=]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+[01;32m[K                                                                                                                                                                                ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:349:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+[01;32m[K     ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:379:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+[01;32m[K       ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:561:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+[01;32m[K                                   ^[m[K
+[01m[K/opt/ros/kinetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+[01;32m[K                       ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:64:9:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+         ROS_INFO(": [%f, %d]", buf1, buf2);
+[01;32m[K         ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:346:176:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 9 has type ‘[01m[Kdouble[m[K’ [-Wformat=]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+[01;32m[K                                                                                                                                                                                ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:349:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+[01;32m[K     ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:379:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+[01;32m[K       ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:561:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+[01;32m[K                                   ^[m[K
+[01m[K/opt/ros/kinetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+[01;32m[K                       ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:64:9:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+         ROS_INFO(": [%f, %d]", buf1, buf2);
+[01;32m[K         ^[m[K
+[100%] [32m[1mLinking CXX executable /home/jphacks2020/catkin_ws/devel/.private/rplidar_ros/lib/rplidar_ros/rplidarNodeYOLO[0m
+[100%] Built target rplidarNodeYOLO

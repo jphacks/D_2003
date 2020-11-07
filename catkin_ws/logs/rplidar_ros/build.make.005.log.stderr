@@ -1,0 +1,132 @@
+In file included from [01m[K/usr/include/c++/5/cstdint:35:0[m[K,
+                 from [01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:46[m[K:
+[01m[K/usr/include/c++/5/bits/c++0x_warning.h:32:2:[m[K [01;31m[Kerror: [m[K#error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+[01;32m[K  ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:[m[K In function ‘[01m[Kcv::Mat parseCSV(const string&)[m[K’:
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:54:21:[m[K [01;35m[Kwarning: [m[Kextended initializer lists only available with -std=c++11 or -std=gnu++11
+   std::ifstream fin { path };
+[01;32m[K                     ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:54:28:[m[K [01;31m[Kerror: [m[Kin C++98 ‘[01m[Kfin[m[K’ must be initialized by constructor, not by ‘[01m[K{...}[m[K’
+   std::ifstream fin { path };
+[01;32m[K                            ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:54:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::basic_ifstream<char>::basic_ifstream(<brace-enclosed initializer list>)[m[K’
+In file included from [01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:47:0[m[K:
+[01m[K/usr/include/c++/5/fstream:495:7:[m[K [01;36m[Knote: [m[Kcandidate: std::basic_ifstream<_CharT, _Traits>::basic_ifstream(const char*, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; std::ios_base::openmode = std::_Ios_Openmode]
+       basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/5/fstream:495:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst string {aka const std::__cxx11::basic_string<char>}[m[K’ to ‘[01m[Kconst char*[m[K’
+[01m[K/usr/include/c++/5/fstream:481:7:[m[K [01;36m[Knote: [m[Kcandidate: std::basic_ifstream<_CharT, _Traits>::basic_ifstream() [with _CharT = char; _Traits = std::char_traits<char>]
+       basic_ifstream() : __istream_type(), _M_filebuf()
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/5/fstream:481:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/usr/include/c++/5/fstream:455:11:[m[K [01;36m[Knote: [m[Kcandidate: std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+[01;32m[K           ^[m[K
+[01m[K/usr/include/c++/5/fstream:455:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst string {aka const std::__cxx11::basic_string<char>}[m[K’ to ‘[01m[Kconst std::basic_ifstream<char>&[m[K’
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:55:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kuint32_t[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   std::uint32_t row_size = 0, col_size = 0;
+[01;32m[K   ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:55:3:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h:9:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/duration.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:57[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:38[m[K:
+[01m[K/usr/include/stdint.h:51:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Kuint32_t[m[K’
+ typedef unsigned int  uint32_t;
+[01;32m[K                       ^[m[K
+[01m[K/usr/include/stdint.h:51:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Kuint32_t[m[K’
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:62:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krow_size[m[K’ was not declared in this scope
+     row_size++;
+[01;32m[K     ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:63:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kuint32_t[m[K’ is not a member of ‘[01m[Kstd[m[K’
+     std::uint32_t col = std::count(line.begin(), line.end(), ',');
+[01;32m[K     ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:63:5:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h:9:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/duration.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:57[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:38[m[K:
+[01m[K/usr/include/stdint.h:51:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Kuint32_t[m[K’
+ typedef unsigned int  uint32_t;
+[01;32m[K                       ^[m[K
+[01m[K/usr/include/stdint.h:51:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Kuint32_t[m[K’
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:64:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcol[m[K’ was not declared in this scope
+     col++;
+[01;32m[K     ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:65:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcol_size[m[K’ was not declared in this scope
+     col_size = std::max(col, col_size);
+[01;32m[K     ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:70:23:[m[K [01;31m[Kerror: [m[K‘[01m[Krow_size[m[K’ was not declared in this scope
+   cv::Mat_<int> new_m(row_size, col_size);
+[01;32m[K                       ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:70:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kcol_size[m[K’ was not declared in this scope
+   cv::Mat_<int> new_m(row_size, col_size);
+[01;32m[K                                 ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:71:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kuint32_t[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   std::uint32_t i = 0, j = 0;
+[01;32m[K   ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:71:3:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h:9:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/duration.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:57[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:38[m[K:
+[01m[K/usr/include/stdint.h:51:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Kuint32_t[m[K’
+ typedef unsigned int  uint32_t;
+[01;32m[K                       ^[m[K
+[01m[K/usr/include/stdint.h:51:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Kuint32_t[m[K’
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:77:36:[m[K [01;35m[Kwarning: [m[Kextended initializer lists only available with -std=c++11 or -std=gnu++11
+     std::istringstream line_stream { line };
+[01;32m[K                                    ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:77:43:[m[K [01;31m[Kerror: [m[Kin C++98 ‘[01m[Kline_stream[m[K’ must be initialized by constructor, not by ‘[01m[K{...}[m[K’
+     std::istringstream line_stream { line };
+[01;32m[K                                           ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:79:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+       new_m(i, j++) = std::stoi(s);
+[01;32m[K             ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:79:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope
+       new_m(i, j++) = std::stoi(s);
+[01;32m[K                ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:79:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstoi[m[K’ is not a member of ‘[01m[Kstd[m[K’
+       new_m(i, j++) = std::stoi(s);
+[01;32m[K                       ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:81:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+     ++i;
+[01;32m[K       ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:82:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope
+     j = 0;
+[01;32m[K     ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:[m[K In function ‘[01m[Kvoid writeCSV(const string&, const cv::Mat&)[m[K’:
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:89:22:[m[K [01;35m[Kwarning: [m[Kextended initializer lists only available with -std=c++11 or -std=gnu++11
+   std::ofstream fout { path };
+[01;32m[K                      ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:89:29:[m[K [01;31m[Kerror: [m[Kin C++98 ‘[01m[Kfout[m[K’ must be initialized by constructor, not by ‘[01m[K{...}[m[K’
+   std::ofstream fout { path };
+[01;32m[K                             ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:89:29:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::basic_ofstream<char>::basic_ofstream(<brace-enclosed initializer list>)[m[K’
+In file included from [01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:47:0[m[K:
+[01m[K/usr/include/c++/5/fstream:697:7:[m[K [01;36m[Knote: [m[Kcandidate: std::basic_ofstream<_CharT, _Traits>::basic_ofstream(const char*, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; std::ios_base::openmode = std::_Ios_Openmode]
+       basic_ofstream(const char* __s,
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/5/fstream:697:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst string {aka const std::__cxx11::basic_string<char>}[m[K’ to ‘[01m[Kconst char*[m[K’
+[01m[K/usr/include/c++/5/fstream:682:7:[m[K [01;36m[Knote: [m[Kcandidate: std::basic_ofstream<_CharT, _Traits>::basic_ofstream() [with _CharT = char; _Traits = std::char_traits<char>]
+       basic_ofstream(): __ostream_type(), _M_filebuf()
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/5/fstream:682:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/usr/include/c++/5/fstream:656:11:[m[K [01;36m[Knote: [m[Kcandidate: std::basic_ofstream<char>::basic_ofstream(const std::basic_ofstream<char>&)
+     class basic_ofstream : public basic_ostream<_CharT,_Traits>
+[01;32m[K           ^[m[K
+[01m[K/usr/include/c++/5/fstream:656:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst string {aka const std::__cxx11::basic_string<char>}[m[K’ to ‘[01m[Kconst std::basic_ofstream<char>&[m[K’
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:[m[K In function ‘[01m[Kvoid scanCallback(const ConstPtr&)[m[K’:
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:100:26:[m[K [01;35m[Kwarning: [m[Kextended initializer lists only available with -std=c++11 or -std=gnu++11
+         std::string path { "file:///home/jphacks2020/D_2003/pytorch-yolo-v3/LiDAR.csv" };
+[01;32m[K                          ^[m[K
+[01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:100:88:[m[K [01;31m[Kerror: [m[Kin C++98 ‘[01m[Kpath[m[K’ must be initialized by constructor, not by ‘[01m[K{...}[m[K’
+         std::string path { "file:///home/jphacks2020/D_2003/pytorch-yolo-v3/LiDAR.csv" };
+[01;32m[K                                                                                        ^[m[K
+make[2]: *** [CMakeFiles/rplidarNodeYOLO.dir/src/YOLO.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rplidarNodeYOLO.dir/all] Error 2
+make: *** [all] Error 2

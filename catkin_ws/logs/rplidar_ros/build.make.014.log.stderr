@@ -1,0 +1,8 @@
+In file included from [01m[K/usr/include/c++/5/cstdint:35:0[m[K,
+                 from [01m[K/home/jphacks2020/catkin_ws/src/rplidar_ros/src/YOLO.cpp:45[m[K:
+[01m[K/usr/include/c++/5/bits/c++0x_warning.h:32:2:[m[K [01;31m[Kerror: [m[K#error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+[01;32m[K  ^[m[K
+make[2]: *** [CMakeFiles/rplidarNodeYOLO.dir/src/YOLO.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rplidarNodeYOLO.dir/all] Error 2
+make: *** [all] Error 2
