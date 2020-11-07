@@ -48,13 +48,13 @@ ASEを使用して安心できる快適なオフィス空間を作りません�
 ### 活用した技術
 #### API・データ
 * IFTTT
-* Node.js
 * nginX
 #### フレームワーク・ライブラリ・モジュール
 * PyTorch(YOLO)
+* OpenCV(YOLO)
+* ROS
 #### デバイス
 * LiDAR
-* Raspberry Pi
 * Google Home
 * Webカメラ
 ### 独自技術
